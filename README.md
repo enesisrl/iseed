@@ -7,16 +7,21 @@
 ## Installation
 
 ### 1. Require with [Composer](https://getcomposer.org/)
-```sh
-composer require orangehill/iseed
-```
-
-**Laravel 5.3.7 and below** or **Laravel 4** need specific version
+add to `composer.json`
 
 ```sh
-composer require orangehill/iseed:2.2 # Laravel 5.3.7 and below
-composer require orangehill/iseed:1.1 # Laravel 4
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/enesisrl/iseed"
+    }
+]
 ```
+
+```sh
+composer require enesisrl/iseed
+```
+
 
 ### 2. Add Service Provider (Laravel 5.4 and below)
 
