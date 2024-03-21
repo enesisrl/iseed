@@ -66,7 +66,7 @@ class IseedServiceProvider extends ServiceProvider
     protected function registerResources()
     {
         $userConfigFile    = app()->configPath().'/iseed.php';
-        $packageConfigFile = __DIR__.'/../../config/config.php';
+        $packageConfigFile = __DIR__.'/config/config.php';
         $config            = $this->app['files']->getRequire($packageConfigFile);
 
         if (file_exists($userConfigFile)) {
